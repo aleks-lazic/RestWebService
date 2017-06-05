@@ -35,14 +35,14 @@ public class RestClient {
 
 	public static void main(String[] args) throws JSONException, JsonProcessingException {
 
-			initializeConnection();
+		initializeConnection();
 
 		// get all products
 		System.out.println("Get All products");
 		getAllProducts();
-
-		System.out.println("\nGet All products sorted by quantity");
+		
 		// get all products sorted by quantity if parameter is true
+		System.out.println("\nGet All products sorted by quantity");
 		getAllProductsSortedByQuantity();
 
 		// get product by name
@@ -54,8 +54,8 @@ public class RestClient {
 		getByNameAndQuantity("palmier", 400);
 
 		// delete product by id
-		// System.out.println("\nDelete product by id");
-		// deleteProductById("591c59933f8e2934d0c83be3");
+		 System.out.println("\nDelete product by id");
+		 deleteProductById("591c59933f8e2934d0c83be3");
 
 		// CREATE FOOD
 		Food food = new Food();
