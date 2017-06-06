@@ -163,7 +163,7 @@ public class RestClient {
 		ObjectMapper mapper = new ObjectMapper();
 		String jsonInString = mapper.writeValueAsString(food);
 
-		// POST method
+		// PUT method
 		Invocation.Builder invocationBuilder = target.path("food").path(id).request();
 		invocationBuilder.put(Entity.entity(jsonInString, MediaType.APPLICATION_JSON));
 
